@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">RunUnlock</string>
-    <string name="welcome">Benevenuto</string>
+    <string name="welcome">Cosa desideri scrivere?</string>
+    <string name="change_text">Cambia Testo</string>
+    <string name="change_text_hint">Inserisci Testo</string>
+
+
 
 </resources>
