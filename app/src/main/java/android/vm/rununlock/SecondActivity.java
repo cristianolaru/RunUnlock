@@ -57,7 +57,7 @@ public class SecondActivity extends AppCompatActivity{
 
                         @Override
                         public void onClick(View v) {
-                                if(!cf.equals("")){ //&& abb_atac.equals("") && email.equals("")){
+                                if(cf.equals("")){ //&& abb_atac.equals("") && email.equals("")){
                                         nameTv.setText("Grazie per aver inviato la tua richiesta per usufruire del servizio RunUnlock, \n" +
                                                 "la preghiamo di attendere una conferma per E-mail o la chiameremo al numero da lei indicato");
 
