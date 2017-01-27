@@ -14,7 +14,7 @@ import android.widget.TextView;
  */
 
 public class MainActivity extends AppCompatActivity {
-    Button changeTextBtn;
+    Button changeTextBtn, exitTextBtn;
     TextView welcomeTv;
     EditText changeTextEdit;
     Activity activity = this;
@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        exitTextBtn=(Button) findViewById(R.id.exit_text_btn);
         welcomeTv = (TextView) findViewById(R.id.welcome_tv);
         changeTextBtn= (Button) findViewById(R.id.change_text_btn);
         changeTextEdit = (EditText) findViewById(R.id.change_text_hint);
@@ -37,6 +38,13 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("username",username);
                 intent.putExtra("age",19);
                 startActivity(intent);
+
+            }
+        });
+        exitTextBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               System.exit(0);
             }
         });
     }
