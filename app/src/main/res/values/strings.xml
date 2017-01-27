@@ -1,9 +1,15 @@
 <resources>
     <string name="app_name">RunUnlock</string>
-    <string name="welcome">Cosa desideri scrivere?</string>
-    <string name="change_text">Cambia Testo</string>
+    <string name="welcome">Benvenuto su RunUnlock</string>
+    <string name="change_text">Login</string>
     <string name="change_text_hint">Inserisci Testo</string>
-    <string name="title_activity_2">Activity2</string>
+    <string name="insert_name">Nome</string>
+    <string name="insert_last_name">Cognome</string>
+    <string name="title_activity_2">Second Activity</string>
+    <string name="codice_fiscale">Codice Fiscale</string>
+    <string name="abbonamento_atac">Abbonamento ATAC</string>
+    <string name="email">E-Mail</string>
+    <string name="telefono">Cell</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
