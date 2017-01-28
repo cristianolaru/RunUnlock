@@ -2,6 +2,7 @@ package android.vm.rununlock;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -57,13 +58,17 @@ public class SecondActivity extends AppCompatActivity{
 
                         @Override
                         public void onClick(View v) {
-                                if(!cf.equals("")){ //&& abb_atac.equals("") && email.equals("")){
-                                        nameTv.setText("Grazie per aver inviato la tua richiesta per usufruire del servizio RunUnlock, \n" +
-                                                "la preghiamo di attendere una conferma per E-mail o la chiameremo al numero da lei indicato");
+                            String codice = cf.getText().toString();
+                            String abbonamento = abb_atac.getText().toString();
+                            if(codice.equals("") || abbonamento.equals("")) {
+                                nameTvError.setText("Mi dispiace non puoi proseguire devi inserire tutti i campi!");
 
-                                }else {
-                                        nameTvError.setText("Devi compilare obbligatoriamente i seguenti i campi!");
-                                }
+
+
+                            }
+                            else{
+                                nameTvError.setText("Grazie per aver scelto il servizio RunUnock ti faremo sapere presto via E-Mail.");
+                            }
                         }
                 });
 

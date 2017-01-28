@@ -9,24 +9,39 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@android:drawable/bottom_bar"
+    android:background="@drawable/side_nav_bar"
     tools:context="android.vm.rununlock.MainActivity"
     android:weightSum="1">
+
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/colorGreen"
         android:id="@+id/name_Tv"
+
         />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textColor="@color/colorRed"
         android:id="@+id/name_Tv_Error"
+
+
         />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,6 +51,7 @@
         android:text="Nome: "
 
         />
+
 
 
     <EditText
@@ -134,6 +150,7 @@
         android:text="Resetta i campi"
         android:id="@+id/button_reset" />
 
+
     <Switch
         android:text="Attiva il servizio"
         android:layout_width="match_parent"
@@ -141,6 +158,8 @@
         android:layout_gravity="bottom"
         android:textColor="@color/colorWhite"
         android:id="@+id/switch1" />
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>
