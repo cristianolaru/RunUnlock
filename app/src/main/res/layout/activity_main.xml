@@ -24,16 +24,51 @@
         android:layout_centerHorizontal="true"
         android:textSize="20dp"
         />
-
-    <EditText
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+    <RelativeLayout
         android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/change_text_hint"
-        android:id="@+id/change_text_hint"
-        android:layout_centerHorizontal="true"
+        android:text="Username:   "
+        android:id="@+id/username"
+        android:textColor="@color/colorWhite"
         />
 
-    <Button
+    </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:id="@+id/editUsername"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password: "
+                android:textColor="@color/colorWhite"
+                android:id="@+id/password"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:id="@+id/editPassword"
+                />
+            <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/change_text"
@@ -42,11 +77,18 @@
         android:layout_marginTop="150dp"
         />
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrati"
+                android:id="@+id/registrazione"
+                />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-
         android:text="@string/exit"
         android:id="@+id/exit_text_btn" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
+import android.text.InputFilter;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,6 +20,7 @@ public class SecondActivity extends AppCompatActivity{
         String username;
         Button reset,send;
         EditText nome,cognome,cf,email,telefono,abb_atac;
+        int maxLength= 16;
         //Switch switch;
 
         @Override
@@ -69,11 +71,13 @@ public class SecondActivity extends AppCompatActivity{
                             else{
                                 nameTvError.setText("Grazie per aver scelto il servizio RunUnock ti faremo sapere presto via E-Mail.");
                             }
+
                         }
                 });
 
+                cf.setFilters(new InputFilter[]{new InputFilter.AllCaps()});
 
+                abb_atac.setFilters(new InputFilter[]{ new InputFilter.LengthFilter(maxLength)});
 
-
-        }
+                }
 }
