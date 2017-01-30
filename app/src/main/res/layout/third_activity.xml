@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    >
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inserisci un username"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/TV_inserisci_username"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="textPersonName"
+        android:id="@+id/id_registrazione_username"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:text="Inserisci e-Mail"
+        android:id="@+id/TV_inserisci_email"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="textEmailAddress"
+        android:id="@+id/id_inserimento_email"
+        />
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Inserisci una Password"
+       android:textColor="@color/colorAccent"
+       android:gravity="center"
+       android:id="@+id/TV_inserisci_password"
+       />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:id="@+id/id_inserimento_password"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inserisci nuovamente la Password"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/TV_again_password"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:id="@+id/id_inserimento2_password"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrati"
+        android:id="@+id/button_registrati"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/TV_risposta"/>
+
+
+
+
+
+</LinearLayout>

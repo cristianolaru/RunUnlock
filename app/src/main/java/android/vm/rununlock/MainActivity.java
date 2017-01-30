@@ -14,11 +14,12 @@ import android.widget.TextView;
  */
 
 public class MainActivity extends AppCompatActivity {
-    Button changeTextBtn, exitTextBtn;
+    Button changeTextBtn, exitTextBtn, registrati;
     TextView welcomeTv;
     EditText changeTextEdit;
     Activity activity = this;
     EditText username,password;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         changeTextBtn= (Button) findViewById(R.id.change_text_btn);
         username = (EditText) findViewById(R.id.editUsername);
         password = (EditText) findViewById(R.id.editPassword);
+        registrati=(Button) findViewById(R.id.registrazione);
         //changeTextEdit = (EditText) findViewById(R.id.change_text_hint);
         changeTextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +50,14 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        registrati.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent2 =new Intent(activity, ThirdActivity.class);
+                startActivity(intent2);
+            }
+        });
+
         exitTextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
