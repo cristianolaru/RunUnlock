@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 
 public class ThirdActivity extends AppCompatActivity{
-    TextView inserisciUsername, inserisciPassword, inserisci2Password, inserisciEmail, risposta;
+    TextView risposta;
     Button registrati;
     EditText registrazioneUsername, registrazionePassword, registrazione2Password, registrazioneEmail;
     String rUsername, rPassword, r2Password;
@@ -23,10 +23,7 @@ public class ThirdActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.third_activity);
         risposta=(TextView) findViewById(R.id.TV_risposta);
-        inserisciUsername=(TextView) findViewById(R.id.TV_inserisci_username);
-        inserisciPassword=(TextView) findViewById(R.id.TV_inserisci_password);
-        inserisci2Password=(TextView)findViewById(R.id.TV_again_password);
-        inserisciEmail=(TextView) findViewById(R.id.TV_inserisci_email);
+
         registrazioneUsername=(EditText) findViewById(R.id.id_registrazione_username);
         registrazionePassword =(EditText) findViewById(R.id.id_inserimento_password);
         registrazione2Password=(EditText) findViewById(R.id.id_inserimento2_password);
