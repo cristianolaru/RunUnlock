@@ -30,7 +30,6 @@ public class SecondActivity extends AppCompatActivity {
     String mail;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,11 +40,12 @@ public class SecondActivity extends AppCompatActivity {
         cognome = (EditText) findViewById(R.id.last_name);
         reset = (Button) findViewById(R.id.button_reset);
         send = (Button) findViewById(R.id.button_send);
+
         cf = (EditText) findViewById(R.id.editCF);
         email = (EditText) findViewById(R.id.email);
         telefono = (EditText) findViewById(R.id.editText);
         abb_atac = (EditText) findViewById(R.id.abbonamento);
-        aSwitch =(Switch)findViewById(R.id.switch1);
+        aSwitch = (Switch) findViewById(R.id.switch1);
         intent = getIntent();
         username = intent.getStringExtra("username");
         nameTv.setText(username);
@@ -64,8 +64,6 @@ public class SecondActivity extends AppCompatActivity {
                 int duration = Toast.LENGTH_LONG;
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
-
-
             }
         });
 
@@ -90,12 +88,19 @@ public class SecondActivity extends AppCompatActivity {
                     int duration = Toast.LENGTH_LONG;
                     Toast toast = Toast.makeText(context, text, duration);
                     toast.show();
+                    String codice = cf.getText().toString();
+                    String abbonamento = abb_atac.getText().toString();
+                    if (codice.equals("") || abbonamento.equals("")) {
+                        nameTvError.setText("Mi dispiace non puoi proseguire devi inserire tutti i campi!");
+
+                    } else {
+                        nameTvError.setText("Grazie per aver scelto il servizio RunUnock ti faremo sapere presto via E-Mail.");
+                    }
 
                 }
-
-
             }
         });
+
 
         cf.setFilters(new InputFilter[]{new InputFilter.AllCaps(), new InputFilter.LengthFilter(maxLength)});
 
@@ -107,22 +112,22 @@ public class SecondActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 boolean buttonSwitch = aSwitch.getSplitTrack();
                 mail = email.getText().toString();
-                if(mail.equals("")){
-                    if(buttonSwitch=true){
+                if (mail.equals("")) {
+                    if (buttonSwitch = true) {
                         Context context = getApplicationContext();
                         CharSequence text = "Impossibile attivare il servizio RunUnlock";
                         int duration = Toast.LENGTH_SHORT;
                         Toast toast = Toast.makeText(context, text, duration);
                         toast.show();
-                        buttonSwitch=false;
+                        buttonSwitch = false;
                         buttonView.setChecked(false);
-                    }else{
+                    } else {
                         Context context = getApplicationContext();
                         CharSequence text = "Il servizio RunUnlock è stato attivato!";
                         int duration = Toast.LENGTH_SHORT;
                         Toast toast = Toast.makeText(context, text, duration);
                         toast.show();
-                        buttonSwitch=true;
+                        buttonSwitch = true;
                     }
 
                 }
@@ -130,5 +135,4 @@ public class SecondActivity extends AppCompatActivity {
         });
 
     }
-
 }

@@ -11,6 +11,7 @@
     <string name="email">E-Mail</string>
     <string name="telefono">Cell</string>
     <string name="exit">Exit</string>
+    <string name="title_activity_3">RunUnlock</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
