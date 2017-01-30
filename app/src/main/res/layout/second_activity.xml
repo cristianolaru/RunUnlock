@@ -90,6 +90,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:inputType="text"
         android:id="@+id/editCF"
         />
      <TextView
@@ -135,6 +136,7 @@
         android:layout_width="349dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:inputType="text"
         android:id="@+id/email"
 
         />

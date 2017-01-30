@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 //username =  changeTextEdit.getText().toString();
                 String user = username.getText().toString();
                 String passw = password.getText().toString();
-                if(username.equals("") || passw.equals("")) {
+                if(user.equals("") || passw.equals("")) {
                     welcomeTv.setText("Mi dispiace ma non puoi loggarti se non inserisci i dati necessari!");
                 }else{
                     Intent intent = new Intent(activity, SecondActivity.class);
