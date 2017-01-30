@@ -5,27 +5,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:background="@android:drawable/bottom_bar"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/side_nav_bar"
     tools:context="android.vm.rununlock.MainActivity"
-    android:weightSum="1"
-    android:orientation="vertical">
+    android:weightSum="1">
+
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textColor="@color/colorBlack"
+        android:textColor="@color/colorGreen"
         android:id="@+id/name_Tv"
+
         />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textColor="@color/colorBlack"
         android:id="@+id/name_Tv_Error"
+
+
         />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,10 +52,12 @@
         />
 
 
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:inputType="textAutoCorrect"
         android:id="@+id/insert_name"/>
 
     <TextView
@@ -57,6 +74,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:inputType="textAutoCorrect"
         android:id="@+id/last_name"/>
 
     <TextView
@@ -73,6 +91,21 @@
         android:layout_gravity="center"
         android:id="@+id/editCF"
         />
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Data di nascita: "
+         android:layout_gravity="center"
+         android:textColor="@color/colorWhite"
+         android:id="@+id/data_nascita"
+         />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="date"
+        android:id="@+id/editDataNascita"
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -86,6 +119,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:inputType="numberDecimal"
         android:id="@+id/abbonamento"
         />
 
@@ -107,7 +141,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Telefono:"
-        android:textColor="@color/colorBlack"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorWhite"
         android:layout_gravity="center"
         android:id="@+id/telefono"
         />
@@ -133,6 +168,7 @@
         android:text="Resetta i campi"
         android:id="@+id/button_reset" />
 
+
     <Switch
         android:text="Attiva il servizio"
         android:layout_width="match_parent"
@@ -140,6 +176,8 @@
         android:layout_gravity="bottom"
         android:textColor="@color/colorBlack"
         android:id="@+id/switch1" />
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>
