@@ -72,8 +72,7 @@ public class SecondActivity extends AppCompatActivity {
             }
         });
 
-        cf.setFilters(new InputFilter[]{new InputFilter.AllCaps()});
-
+        cf.setFilters(new InputFilter[]{new InputFilter.AllCaps(), new InputFilter.LengthFilter(maxLength)});
         abb_atac.setFilters(new InputFilter[]{new InputFilter.LengthFilter(maxLength)});
 
     }
