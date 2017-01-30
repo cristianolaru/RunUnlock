@@ -1,5 +1,6 @@
 package android.vm.rununlock;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class ThirdActivity extends AppCompatActivity{
@@ -17,6 +19,9 @@ public class ThirdActivity extends AppCompatActivity{
     String rUsername, rPassword, r2Password;
     Intent intent2;
     boolean xo=false;
+    Context context;
+    int duration;
+    Toast toast;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -32,22 +37,43 @@ public class ThirdActivity extends AppCompatActivity{
         intent2 = getIntent();
 
         registrati.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
 
-            do {
+                if (controlloPassword(registrazionePassword.getText()+"",registrazione2Password.getText()+"")){
+                    context = getApplicationContext();
+                    CharSequence text = "loading...";
+                    duration = Toast.LENGTH_LONG;
+                    toast = Toast.makeText(context, text, duration);
+                    toast.show();
+                }else{
+                    context = getApplicationContext();
+                    CharSequence text = "Le password non sono uguali";
+                    duration = Toast.LENGTH_LONG;
+                    toast = Toast.makeText(context, text, duration);
+                    toast.show();
+
+                }
 
 
-                if (registrazionePassword == registrazione2Password && registrazionePassword.length() < 4 && registrazionePassword.length() > 8)
-                    risposta.setText("Password Errore");
-                else
-                    risposta.setText("Ok!");
 
 
-            }while ((risposta.equals("Ok!")));
 
             }
+
         });
+
+    }
+
+    public boolean controlloPassword(String a, String b){
+        if (a.length()<4 && b.length()>8){
+            return false;
+        }else  if (a.equals(b)){
+            return true;
+        }else{
+            return false;}
+
     }
 }
 
