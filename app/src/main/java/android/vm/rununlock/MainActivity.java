@@ -47,10 +47,10 @@ public class MainActivity extends AppCompatActivity  {
                 String user = username.getText().toString();
                 String passw = password.getText().toString();
 
-                if(user.equals("Mario") || passw.equals("12345")) {
+                if(user.equals("Francesco") || passw.equals("1234") && user.equals("Cristian") || user.equals("1234")){
 
                     Intent intent = new Intent(activity, SecondActivity.class);
-                    //intent.putExtra("username",username);
+                    intent.putExtra("user",user);
                     startActivity(intent);
                     Context context = getApplicationContext();
                     CharSequence text = "Accesso avvenuto correttamente";

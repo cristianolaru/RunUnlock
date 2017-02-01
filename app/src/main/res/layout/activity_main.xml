@@ -25,6 +25,7 @@
         android:textSize="20dp"
         android:gravity="center"
         />
+
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
@@ -45,7 +46,7 @@
             <EditText
                 android:layout_marginTop="40dp"
                 android:layout_width="match_parent"
-                android:layout_height="66dp"
+                android:layout_height="wrap_content"
                 android:background="@drawable/username"
                 android:gravity="center"
                 android:inputType="textCapSentences"
@@ -59,11 +60,10 @@
                 />
 
 
-
             <EditText
                 android:background="@drawable/username"
                 android:layout_width="match_parent"
-                android:layout_height="78dp"
+                android:layout_height="wrap_content"
                 android:inputType="textPassword"
                 android:imeOptions="actionGo"
                 android:id="@+id/editPassword"

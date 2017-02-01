@@ -22,7 +22,7 @@ import org.w3c.dom.Text;
 
 public class SecondActivity extends AppCompatActivity {
 
-    TextView nameTv, nameTvError;
+    TextView nameTv;
     Intent intent;
     String username,nome;
     Button reset, send;
@@ -39,7 +39,6 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.second_activity);
         nameTv = (TextView) findViewById(R.id.name_Tv);
-        nameTvError = (TextView) findViewById(R.id.name_Tv_Error);
         reset = (Button) findViewById(R.id.button_reset);
         send = (Button) findViewById(R.id.button_send);
 
@@ -50,8 +49,8 @@ public class SecondActivity extends AppCompatActivity {
         aSwitch = (Switch) findViewById(R.id.switch1);
         intent = getIntent();
         username = intent.getStringExtra("username");
-        nome = intent.getStringExtra("nome");
-        nameTv.setText(username);
+        nome = intent.getStringExtra("user");
+        nameTv.setText("Benvenuto: " +nome);
 
 
 
