@@ -20,9 +20,7 @@ public class ThirdActivity extends AppCompatActivity{
     TextView risposta;
     Button registrati;
     EditText registrazioneUsername, registrazionePassword, registrazione2Password, registrazioneEmail;
-    String rUsername, rPassword, r2Password;
     Intent intent2;
-    boolean xo=false;
     Context context;
     int duration;
     Toast toast;
@@ -57,27 +55,19 @@ public class ThirdActivity extends AppCompatActivity{
                     duration = Toast.LENGTH_LONG;
                     toast = Toast.makeText(context, text, duration);
                     toast.show();
-
                 }
-
-
-
-
-
             }
-
         });
-
     }
 
     public boolean controlloPassword(String a, String b){
-        if (a.length()<4 && b.length()>8){
+        if (a.length()<4 && a.length()>8){
             return false;
+
         }else  if (a.equals(b)){
             return true;
         }else{
             return false;}
-
     }
 
     @Override
