@@ -29,91 +29,35 @@
         android:layout_gravity="center"
         android:textColor="@color/colorBlack"
         android:id="@+id/name_Tv_Error"
-
-
         />
+
     <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        >
+        android:layout_height="fill_parent">
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:id="@+id/name_id"
-        android:textColor="@color/colorWhite"
-        android:text="Nome: "
-
-        />
-
-
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:inputType="textAutoCorrect"
-        android:id="@+id/insert_name"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Cognome: "
-        android:textColor="@color/colorWhite"
-        android:id="@+id/cognome_id"
-
-        />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:inputType="textAutoCorrect"
-        android:id="@+id/last_name"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Codice Fiscale:"
-        android:textColor="@color/colorWhite"
-        android:layout_gravity="center"
-        android:id="@+id/codice_fisc"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:hint="@string/codice_fiscale"
+        android:gravity="center"
         android:inputType="text"
         android:id="@+id/editCF"
         />
-     <TextView
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:text="Data di nascita: "
-         android:layout_gravity="center"
-         android:textColor="@color/colorWhite"
-         android:id="@+id/data_nascita"
-         />
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:inputType="date"
+        android:hint="@string/hint_data_nascita"
+        android:gravity="center"
         android:id="@+id/editDataNascita"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Inserisci il tuo codice abbonamento ATAC:"
-        android:textColor="@color/colorWhite"
-        android:layout_gravity="center"
-        android:id="@+id/cf"
         />
 
     <EditText
@@ -121,32 +65,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:inputType="numberDecimal"
+        android:hint="@string/abbonamento_atac"
+        android:gravity="center"
         android:id="@+id/abbonamento"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="E-Mail:"
-        android:textColor="@color/colorWhite"
-        android:layout_gravity="center"
-        android:id="@+id/mail"/>
-    <EditText
-        android:layout_width="349dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:inputType="text"
-        android:id="@+id/email"
-
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Telefono:"
-        android:inputType="textEmailAddress"
-        android:textColor="@color/colorWhite"
-        android:layout_gravity="center"
-        android:id="@+id/telefono"
         />
 
 
@@ -154,6 +75,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="phone"
+        android:hint="@string/telefono"
+        android:gravity="center"
         android:ems="10"
         android:id="@+id/editText" />
 
@@ -162,13 +85,15 @@
         android:layout_height="wrap_content"
         android:text="Richiedi"
         android:id="@+id/button_send"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
         />
 
     <Button
         android:layout_width="356dp"
         android:layout_height="wrap_content"
         android:text="Resetta i campi"
-        android:id="@+id/button_reset" />
+        android:id="@+id/button_reset"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"/>
 
 
     <Switch
@@ -177,6 +102,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:textColor="@color/colorBlack"
+        style="style=@android:style/Widget.DeviceDefault.Button.Inset"
         android:id="@+id/switch1" />
         </LinearLayout>
     </ScrollView>

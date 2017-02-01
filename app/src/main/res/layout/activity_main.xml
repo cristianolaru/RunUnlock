@@ -85,14 +85,6 @@
         android:layout_marginTop="30dp"
                 style="@android:style/Widget.DeviceDefault.Button.Inset" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Registrati"
-                android:id="@+id/registrazione"
-                        style="@android:style/Widget.DeviceDefault.Button.Inset"
-                />
-
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -100,6 +92,20 @@
         android:id="@+id/exit_text_btn"
                 style="@android:style/Widget.DeviceDefault.Button.Inset"
         />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Clicca qui per registrarti"
+                android:onClick="handleOnClick"
+                android:clickable="true"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/registratiTextView"
+
+
+                />
         </LinearLayout>
     </ScrollView>
+
 </LinearLayout>

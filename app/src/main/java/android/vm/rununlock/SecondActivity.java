@@ -24,9 +24,9 @@ public class SecondActivity extends AppCompatActivity {
 
     TextView nameTv, nameTvError;
     Intent intent;
-    String username;
+    String username,nome;
     Button reset, send;
-    EditText nome, cognome, cf, email, telefono, abb_atac;
+    EditText  cf, email, telefono, abb_atac;
     int maxLength = 16;
     Switch aSwitch;
     String codice;
@@ -40,8 +40,6 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.second_activity);
         nameTv = (TextView) findViewById(R.id.name_Tv);
         nameTvError = (TextView) findViewById(R.id.name_Tv_Error);
-        nome = (EditText) findViewById(R.id.insert_name);
-        cognome = (EditText) findViewById(R.id.last_name);
         reset = (Button) findViewById(R.id.button_reset);
         send = (Button) findViewById(R.id.button_send);
 
@@ -52,13 +50,14 @@ public class SecondActivity extends AppCompatActivity {
         aSwitch = (Switch) findViewById(R.id.switch1);
         intent = getIntent();
         username = intent.getStringExtra("username");
+        nome = intent.getStringExtra("nome");
         nameTv.setText(username);
+
+
 
         reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                nome.setText("");
-                cognome.setText("");
                 cf.setText("");
                 email.setText("");
                 telefono.setText("");

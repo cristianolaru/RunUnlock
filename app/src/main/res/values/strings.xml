@@ -14,11 +14,13 @@
     <string name="title_activity_3">RunUnlock</string>
     <string name="hint_info">La nostra app è basata su una bla bla bla...</string>
     <string name="hint_setting">work in progress</string>
-
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
     <string name="action_settings">Settings</string>
+    <string name="hint_cf">Codice Fiscale</string>
+    <string name="hint_data_nascita">Data di Nascita</string>
+    <string name="hint_abbonamento">Abbonamento ATAC</string>
+    <string name="hint_telefono">Cellulare</string>
 
 
 </resources>

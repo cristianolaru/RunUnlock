@@ -20,8 +20,8 @@ import android.widget.Toast;
  */
 
 public class MainActivity extends AppCompatActivity  {
-    Button changeTextBtn, exitTextBtn, registrati;
-    TextView welcomeTv;
+    Button changeTextBtn, exitTextBtn;//, registrati;
+    TextView welcomeTv, register;
     EditText changeTextEdit;
     Activity activity = this;
     EditText username,password;
@@ -36,7 +36,8 @@ public class MainActivity extends AppCompatActivity  {
         changeTextBtn= (Button) findViewById(R.id.change_text_btn);
         username = (EditText) findViewById(R.id.editUsername);
         password = (EditText) findViewById(R.id.editPassword);
-        registrati=(Button) findViewById(R.id.registrazione);
+        register=(TextView) findViewById(R.id.registratiTextView);
+        //registrati=(Button) findViewById(R.id.registrazione);
         //changeTextEdit = (EditText) findViewById(R.id.change_text_hint);
         changeTextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,7 +69,7 @@ public class MainActivity extends AppCompatActivity  {
 
             }
         });
-        registrati.setOnClickListener(new View.OnClickListener(){
+        register.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 Intent intent2 =new Intent(activity, ThirdActivity.class);
