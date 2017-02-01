@@ -90,12 +90,6 @@ public class SecondActivity extends AppCompatActivity {
                     toast.show();
                     String codice = cf.getText().toString();
                     String abbonamento = abb_atac.getText().toString();
-                    if (codice.equals("") || abbonamento.equals("")) {
-                        nameTvError.setText("Mi dispiace non puoi proseguire devi inserire tutti i campi!");
-
-                    } else {
-                        nameTvError.setText("Grazie per aver scelto il servizio RunUnock ti faremo sapere presto via E-Mail.");
-                    }
 
                 }
             }
