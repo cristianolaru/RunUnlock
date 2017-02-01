@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -41,13 +43,9 @@ public class MainActivity extends AppCompatActivity {
                 //username =  changeTextEdit.getText().toString();
                 String user = username.getText().toString();
                 String passw = password.getText().toString();
-                if(user.equals("") || passw.equals("")) {
-                    Context context = getApplicationContext();
-                    CharSequence text = "Mi dispiace non puoi proseguire devi inserire tutti i campi!";
-                    int duration = Toast.LENGTH_LONG;
-                    Toast toast = Toast.makeText(context, text, duration);
-                    toast.show();
-                }else{
+
+                if(user.equals("Mario") || passw.equals("12345")) {
+
                     Intent intent = new Intent(activity, SecondActivity.class);
                     //intent.putExtra("username",username);
                     startActivity(intent);
@@ -56,6 +54,13 @@ public class MainActivity extends AppCompatActivity {
                     int duration = Toast.LENGTH_LONG;
                     Toast toast = Toast.makeText(context, text, duration);
                     toast.show();
+                }else{
+                    Context context = getApplicationContext();
+                    CharSequence text = "Mi dispiace non puoi proseguire devi inserire tutti i campi!";
+                    int duration = Toast.LENGTH_LONG;
+                    Toast toast = Toast.makeText(context, text, duration);
+                    toast.show();
+
 
                 }
 
@@ -75,5 +80,8 @@ public class MainActivity extends AppCompatActivity {
                System.exit(0);
             }
         });
+
+
     }
+
 }
