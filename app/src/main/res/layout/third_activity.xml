@@ -5,9 +5,38 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_blue"
     >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
 
 
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:id="@+id/id_inserimento_nome"
+        android:hint="Inserisci Nome"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:layout_marginTop="20dp"
+        />
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:id="@+id/id_inserimento_cognome"
+        android:hint="Inserisci Cognome"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:layout_marginTop="20dp"
+        />
 
     <EditText
         android:layout_width="match_parent"
@@ -16,7 +45,7 @@
         android:inputType="textPersonName"
         android:id="@+id/id_registrazione_username"
         android:hint="Username"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="20dp"
         android:textColor="@color/colorWhite"
         android:textColorHint="@color/colorWhite"
 
@@ -93,8 +122,8 @@
         android:layout_marginTop="20dp"
         />
 
-
-
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>
