@@ -4,5 +4,21 @@
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:title="@string/action_settings"
-        app:showAsAction="never" />
+        app:showAsAction="never"
+        android:visible="false"/>
+    <item
+        android:id="@+id/impostazioni"
+        android:title="Impostazioni"
+        android:orderInCategory="150"
+        app:showAsAction="never"
+        android:visible="true"></item>
+    <item
+        android:visible="true"
+        android:title="Info"
+        android:orderInCategory="90"
+        app:showAsAction="never"
+        android:id="@+id/Info"></item>
+
+
+
 </menu>

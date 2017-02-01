@@ -5,7 +5,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.PopupMenu;
 import android.text.InputFilter;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -128,5 +132,41 @@ public class SecondActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.impostazioni:
+                impostazioni();
+                return true;
+            case R.id.Info:
+                showInfo();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void showInfo() {
+        View v = null;
+        PopupMenu popup = new PopupMenu(this, v);
+        popup.setOnMenuItemClickListener((PopupMenu.OnMenuItemClickListener) this);
+        popup.inflate(R.menu.main);
+        popup.show();
+       /* setContentView(R.layout.info_activity);
+        Intent intent = new Intent(activity, SecondActivity.class);*/
+    }
+
+    private void impostazioni() {
+        setContentView(R.layout.setting_activity);
     }
 }

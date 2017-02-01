@@ -12,6 +12,8 @@
     <string name="telefono">Cell</string>
     <string name="exit">Exit</string>
     <string name="title_activity_3">RunUnlock</string>
+    <string name="hint_info">La nostra app è basata su una bla bla bla...</string>
+    <string name="hint_setting">work in progress</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
