@@ -43,14 +43,16 @@
 
 
             <EditText
+                android:layout_marginTop="40dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="66dp"
                 android:background="@drawable/username"
                 android:gravity="center"
                 android:inputType="textCapSentences"
                 android:id="@+id/editUsername"
                 android:hint="Usename"
                 android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
 
 
                 style="@android:style/Widget.Material.Light.AutoCompleteTextView"
@@ -61,13 +63,14 @@
             <EditText
                 android:background="@drawable/username"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="78dp"
                 android:inputType="textPassword"
                 android:imeOptions="actionGo"
                 android:id="@+id/editPassword"
                 android:hint="Password"
                 android:textColorHint="@color/colorWhite"
                 android:gravity="center"
+                android:textColor="@color/colorWhite"
                 />
 
             <android.support.design.widget.TextInputLayout
@@ -82,7 +85,7 @@
         android:text="@string/change_text"
         android:id="@+id/change_text_btn"
         android:layout_weight="0.03"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
                 style="@android:style/Widget.DeviceDefault.Button.Inset" />
 
     <Button
