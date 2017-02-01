@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/colorPrimaryDark"
+    android:background="@drawable/background_blue"
     tools:context="android.vm.rununlock.MainActivity"
     android:weightSum="1">
 
@@ -46,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:id="@+id/name_id"
-        android:textColor="@color/colorBlack"
+        android:textColor="@color/colorWhite"
         android:text="Nome: "
 
         />
@@ -65,7 +65,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Cognome: "
-        android:textColor="@color/colorBlack"
+        android:textColor="@color/colorWhite"
         android:id="@+id/cognome_id"
 
         />
@@ -81,7 +81,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Codice Fiscale:"
-        android:textColor="@color/colorBlack"
+        android:textColor="@color/colorWhite"
         android:layout_gravity="center"
         android:id="@+id/codice_fisc"
         />
@@ -111,7 +111,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Inserisci il tuo codice abbonamento ATAC:"
-        android:textColor="@color/colorBlack"
+        android:textColor="@color/colorWhite"
         android:layout_gravity="center"
         android:id="@+id/cf"
         />
@@ -128,7 +128,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="E-Mail:"
-        android:textColor="@color/colorBlack"
+        android:textColor="@color/colorWhite"
         android:layout_gravity="center"
         android:id="@+id/mail"/>
     <EditText

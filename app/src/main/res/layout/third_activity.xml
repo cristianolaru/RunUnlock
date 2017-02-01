@@ -76,10 +76,10 @@
         android:layout_height="wrap_content"
         android:text="Registrati"
         android:id="@+id/button_registrati"
-        android:background="@color/colorWhite"
+
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-
+                style="@android:style/Widget.DeviceDefault.Button.Inset"
 
 
 
